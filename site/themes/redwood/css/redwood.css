@@ -726,14 +726,14 @@ img.zoom-img {
 
 @font-face {
   font-family: 'bebas_kairegular';
-  src: url("../../fonts/webfontkit/bebaskai-webfont.woff2") format("woff2"), url("../../fonts/webfontkit/bebaskai-webfont.woff") format("woff");
+  src: url("../fonts/webfontkit/bebaskai-webfont.woff2") format("woff2"), url("../fonts/webfontkit/bebaskai-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'flamabookitalic';
-  src: url("../../fonts/webfontkit/flamabook-italic-webfont.woff2") format("woff2"), url("../../fonts/webfontkit/flamabook-italic-webfont.woff") format("woff");
+  src: url("../fonts/webfontkit/flamabook-italic-webfont.woff2") format("woff2"), url("../fonts/webfontkit/flamabook-italic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
