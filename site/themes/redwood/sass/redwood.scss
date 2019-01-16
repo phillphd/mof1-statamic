@@ -13,18 +13,36 @@
 @import "components/tiles";
 @import "components/zoom";
 
+@font-face {
+    font-family: 'bebas_kairegular';
+    src: url('../../fonts/webfontkit/bebaskai-webfont.woff2') format('woff2'),
+         url('../../fonts/webfontkit/bebaskai-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'flamabookitalic';
+    src: url('../../fonts/webfontkit/flamabook-italic-webfont.woff2') format('woff2'),
+         url('../../fonts/webfontkit/flamabook-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-	font-family: 'BebasKai';
+	font-family: 'bebas_kairegular';
 	letter-spacing: 1px;
 }
 
 p {
-	font-family: 'FlamaBook-Italic';
+	font-family: 'flamabookitalic';
 }
 
 body {
@@ -168,7 +186,7 @@ body {
 	&__btn {
 		width: 100%;
 		margin-bottom: 15px;
-		font-family: 'BebasKai';
+		font-family: 'bebas_kairegular';
 		font-size: 16px;
 		letter-spacing: 1px;
 		background-color: #202224;
