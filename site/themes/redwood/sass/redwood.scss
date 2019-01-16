@@ -28,8 +28,12 @@ p {
 }
 
 body {
+	padding: 0 10px;
 	-webkit-font-smoothing: antialiased;
 	background-image: url('../../../../assets/img/texture.jpg');
+	@media (min-width: 768px) {
+		padding: 0;
+	}
 }
 
 .navbar-redwood {
@@ -44,7 +48,9 @@ body {
     	opacity: 0;
     	transition: .25s;
     	.scrolled & {
-    		opacity: 1;
+    		@media (min-width: 1400px) {
+    			opacity: 1;
+    		}
     	}
     }
     .navbar-brand {
@@ -52,12 +58,22 @@ body {
 		padding: 20px 15px;
 	}
 	.row {
-		margin: 0 -110px;
+		@media (min-width: 1400px) {
+			margin: 0 -110px;
+		}
 	}
 }
 
 .navbar-brand {
 	position: relative;
+	padding-left: 0 !important;
+	transform: scale(.75);
+    transform-origin: center left;
+    transition: .25s;
+	@media (min-width: 768px) {
+		padding-left: 15px !important;
+		transform: scale(1);
+	}
 	&__mark {
 		&--scrolled {
 			position: fixed;
@@ -68,8 +84,11 @@ body {
 	&__logo {
 		position: absolute;
 		top: 50%;
-		left: 110px;
+		left: 95px;
 		transform: translateY(-50%);
+		@media (min-width: 768px) {
+			left: 110px;
+		}
 	}
 }
 
@@ -81,6 +100,13 @@ body {
 	li {
 		display: inline;
 		margin-right: 20px;
+	}
+	i {
+		transform: scale(1);
+		transition: .25s;
+		&:hover {
+			transform: scale(1.1);
+		}
 	}
 }
 
@@ -98,8 +124,10 @@ body {
 	&__meta {
 		position: relative;
 		z-index: 9;
-		// width: 50%;
-		padding: 80px;
+		padding: 60px 40px;
+		@media (min-width: 768px) {
+			padding: 80px;
+		}
 	}
 	&__title {
 		margin-bottom: 0;
