@@ -741,4 +741,8 @@ $(window).scroll(function() {
     }
 });
 
+$('body').on('click', '.show-me-the-money', function() {
+	$('body').addClass('boom-jangles');
+});
+
 //# sourceMappingURL=redwood.js.map

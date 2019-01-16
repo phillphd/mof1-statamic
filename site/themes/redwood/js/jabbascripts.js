@@ -54,3 +54,7 @@ $(window).scroll(function() {
         $('body').removeClass('scrolled');
     }
 });
+
+$('body').on('click', '.show-me-the-money', function() {
+	$('body').addClass('boom-jangles');
+});

@@ -764,6 +764,10 @@ body {
   }
 }
 
+.info-podcast-title i {
+  display: none;
+}
+
 .navbar-redwood {
   margin-bottom: 0;
   background: transparent;
@@ -929,4 +933,42 @@ body {
   background-color: #202224;
   border: 1px solid #202224;
   opacity: .8;
+}
+
+.show-me-the-money {
+  display: inline-block;
+  padding: 0 40px;
+  margin: 20px 10px 40px;
+  font-family: 'bebas_kairegular';
+  line-height: 40px;
+  color: #202224;
+  border: 4px solid #202224;
+  transition: .25s;
+}
+
+.show-me-the-money:focus {
+  color: #202224;
+  text-decoration: none;
+}
+
+.show-me-the-money:hover {
+  color: #FFF;
+  text-decoration: none;
+  background-color: #202224;
+}
+
+.boom-jangles .show-me-the-money {
+  display: none;
+}
+
+.the-rest-of-the-owl {
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: opacity .25s;
+}
+
+.boom-jangles .the-rest-of-the-owl {
+  height: auto;
+  opacity: 1;
 }
