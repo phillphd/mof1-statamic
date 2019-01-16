@@ -1,0 +1,157 @@
+// Base
+@import "core/fonts";
+@import "core/settings";
+@import "core/base";
+@import "core/layout";
+
+@import "elements/forms";
+@import "elements/typography";
+
+@import "components/gallery";
+@import "components/nav";
+@import "components/tags";
+@import "components/tiles";
+@import "components/zoom";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'BebasKai';
+	letter-spacing: 1px;
+}
+
+p {
+	font-family: 'FlamaBook-Italic';
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	background-image: url('../../../../assets/img/texture.jpg');
+}
+
+.navbar-redwood {
+	margin-bottom: 0;
+	background: transparent;
+    border: 0;
+    &--scrolled {
+    	position: fixed;
+    	top: 20px;
+    	right: 0;
+    	left: 0;
+    	opacity: 0;
+    	transition: .25s;
+    	.scrolled & {
+    		opacity: 1;
+    	}
+    }
+    .navbar-brand {
+		height: auto;
+		padding: 20px 15px;
+	}
+	.row {
+		margin: 0 -110px;
+	}
+}
+
+.navbar-brand {
+	position: relative;
+	&__mark {
+		&--scrolled {
+			position: fixed;
+			top: 0;
+			left: 0;
+		}
+	}
+	&__logo {
+		position: absolute;
+		top: 50%;
+		left: 110px;
+		transform: translateY(-50%);
+	}
+}
+
+.social-list {
+	padding: 0;
+	margin: 0 0 60px;
+	font-size: 3rem;
+	list-style-type: none;
+	li {
+		display: inline;
+		margin-right: 20px;
+	}
+}
+
+.episode-container {
+	position: relative;
+	margin-bottom: 80px;
+	overflow: hidden;
+	color: #FFF;
+	background-color: #202224;
+	&__broadcast {
+		position: absolute;
+		top: 0;
+		left: -80px;
+	}
+	&__meta {
+		position: relative;
+		z-index: 9;
+		// width: 50%;
+		padding: 80px;
+	}
+	&__title {
+		margin-bottom: 0;
+		text-align: center;
+	}
+	&__subtitle {
+		margin-bottom: 24px;
+		text-align: center;
+	}
+	&__content {
+		margin-bottom: 48px;
+	}
+	&__player {
+
+	}
+	&__image {
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: none;
+		width: 50%;
+		height: 100%;
+		text-align: center;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		img {
+			width: 80%;
+		}
+	}
+}
+
+.row--adapt-overcome {
+	margin: 0 -30px;
+}
+
+.card-body {
+	&__btn {
+		width: 100%;
+		margin-bottom: 15px;
+		font-family: 'BebasKai';
+		font-size: 16px;
+		letter-spacing: 1px;
+		background-color: #202224;
+		border: 1px solid #202224;
+		border-radius: 0;
+		opacity: 1;
+		transition: .2s;
+		&:hover {
+			background-color: #202224;
+			border: 1px solid #202224;
+			opacity: .8;
+		}
+	}
+}

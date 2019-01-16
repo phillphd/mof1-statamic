@@ -1,0 +1,2 @@
+simplecast:
+    url: 'https://api.simplecast.com/v1/podcasts/1607/episodes.json?api_key=sc_VS6l8ZdZTuWaX-Y-MUtANg'

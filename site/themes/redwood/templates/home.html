@@ -1,0 +1,80 @@
+{{ cache for="12 hours" }}
+{{ placid:request handle="simplecast" }}
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    {{ response limit="1" }}
+                        <div class="episode-container">
+                            <div class="episode-container__broadcast">
+                                {{ partial:svg/mof1-broadcast }}
+                            </div>
+                            <div class="episode-container__meta">
+                                <h2 class="episode-container__title">{{ title }}</h2>
+                                <h5 class="episode-container__subtitle">{{ published_at format="M t, Y"}}</h5>
+                                <p class="episode-container__content">{{ description }}</p>
+                                <div class="episode-container__player">
+                                    <iframe frameborder='0' height='200px' scrolling='no' seamless src='https://embed.simplecast.com/{{ sharing_url | segment:2 }}?color=f5f5f5' width='100%'></iframe>
+                                </div>
+                            </div>
+                            <div class="episode-container__image" style="background-image: url('{{ images.small }}');">
+                                <img src="{{ images.small }}" />
+                            </div>
+                        </div>
+                    {{ /response }}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>Connect With Us</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <ul class="social-list">
+                        <li><a href="mailto:patrick@mof1podcast.com" target="_blank"><i class="fas fa-envelope" style="color: #ea4335;"></i></a></li>
+                        <li><a href="https://www.facebook.com/mof1podcast/" target="_blank"><i class="fab fa-facebook" style="color: #3b5998;"></i></a></li>
+                        <li><a href="https://play.google.com/music/listen?u=0#/ps/Iktccucqunb5ta63sgo7ezscjoa" target="_blank"><i class="fab fa-google-play" style="color: #fbbc05;"></i></a></li>
+                        <li><a href="https://www.instagram.com/mof1podcast/" target="_blank"><i class="fab fa-instagram" style="color: #c32aa3;"></i></a></li>
+                        <li><a href="https://itunes.apple.com/us/podcast/mof1-podcast/id1074500173" target="_blank"><i class="fab fa-itunes" style="color: #a6b1b7;"></i></a></li>
+                        <li><a href="https://mof1podcast.us11.list-manage.com/subscribe/post?u=6dc02cf6ffcae8578be9f632b&id=fb39b5f9a9" target="_blank"><i class="fab fa-mailchimp" style="color: #ffe01b;"></i></a></li>
+                        <li><a href="http://bit.ly/mof1slack" target="_blank"><i class="fab fa-slack" style="color: #4d394b;"></i></a></li>
+                        <li><a href="https://open.spotify.com/show/12uCPkzl1FYEbNjH7EOgWJ" target="_blank"><i class="fab fa-spotify" style="color: #1ed760;"></i></a></li>
+                        <li><a href="https://twitter.com/mof1podcast" target="_blank"><i class="fab fa-twitter" style="color: #1da1f2;"></i></a></li>
+                        <li><a href="https://www.youtube.com/mof1podcast" target="_blank"><i class="fab fa-youtube" style="color: #ff0000;"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <article class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h3>Recent Episodes</h3>
+                    </div>
+                </div>
+                <div class="row row--adapt-overcome">
+                    {{ response limit="12" }}
+                        <div class="col-xs-6 col-sm-4 col-md-3">
+                            <div class="card">
+                                <img class="card-img-top" src="{{ images.small }}" alt="Card image cap">
+                                <div class="card-body">
+                                    <a href="{{ sharing_url }}" target="_blank" class="btn btn-primary card-body__btn">Play Episode</a>
+                                </div>
+                            </div>
+                        </div>
+                    {{ /response }}
+                </div>
+            </div>
+        </article>
+    </section>
+{{ /placid:request }}
+{{ /cache }}

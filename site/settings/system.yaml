@@ -1,0 +1,8 @@
+app_key: INOAYkx3yneXLbeD2VLjQ9exGujdQjG1
+yaml_parser: symfony
+locales:
+  en:
+    full: en_US
+    name: English
+    url: 'http://master:8888/'
+timezone: America/New_York
