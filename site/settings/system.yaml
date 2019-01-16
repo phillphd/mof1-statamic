@@ -4,5 +4,5 @@ locales:
   en:
     full: en_US
     name: English
-    url: 'http://master:8888/'
+    url: 'https://www.mof1.network/'
 timezone: America/New_York
