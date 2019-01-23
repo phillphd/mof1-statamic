@@ -120,7 +120,6 @@ RewriteRule ^(.*)/$ /$1 [L,R=301]
 RewriteRule ^site/(?!themes) - [F,L]
 RewriteRule ^local - [F,L]
 RewriteRule ^statamic - [F,L]
-RewriteRule ^sketch https://www.sketchapp.com/get/?utm_source=podcast-mof1&utm_medium=podcast&utm_campaign=2019 [R,L]
 
 # Block access to hidden files and directories, with the exception of /.well-known
 RedirectMatch 404 /(?!.well-known)(\.)\w+
