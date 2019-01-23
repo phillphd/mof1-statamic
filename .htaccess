@@ -132,3 +132,11 @@ RedirectMatch 404 /(?!.well-known)(\.)\w+
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^ index.php [L]
+
+# ------------------------------------------------------------------------------
+# Handle Sketch Download Requests
+# ------------------------------------------------------------------------------
+
+RewriteRule ^sketch https://www.sketchapp.com/get/?utm_source=podcast-mof1&utm_medium=podcast&utm_campaign=2019 [R,L]
+
+
