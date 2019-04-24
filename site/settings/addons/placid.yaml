@@ -1,2 +1,4 @@
 simplecast:
-    url: 'https://api.simplecast.com/v1/podcasts/1607/episodes.json?api_key=sc_VS6l8ZdZTuWaX-Y-MUtANg'
+    url: 'https://api.simplecast.com/podcasts/92b52872-e13c-4d41-88bc-8a329dee4b43/episodes?limit=1000'
+    headers:
+      Authorization: 'Bearer eyJhcGlfa2V5IjoiNjY1MDI2YWUwNGQ3Y2Y2MmQ5Y2MyMDc5ZWNiNjczOTEifQ=='
