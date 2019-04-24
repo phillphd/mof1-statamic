@@ -5,22 +5,24 @@
             <div class="row">
                 <div class="col">
                     {{ response.collection limit="1" }}
-                        <div class="episode-container">
-                            <div class="episode-container__broadcast">
-                                {{ partial:svg/mof1-broadcast }}
-                            </div>
-                            <div class="episode-container__meta">
-                                <h2 class="episode-container__title">{{ title }}</h2>
-                                <h5 class="episode-container__subtitle">{{ published_at format="M d, Y"}}</h5>
-                                <p class="episode-container__content">{{ description }}</p>
-                                <div class="episode-container__player">
-                                    <iframe frameborder='0' height='200px' scrolling='no' seamless src='https://player.simplecast.com/{{ id }}?dark=false' width='100%'></iframe>
+                        {{ if !is_hidden }}
+                            <div class="episode-container">
+                                <div class="episode-container__broadcast">
+                                    {{ partial:svg/mof1-broadcast }}
+                                </div>
+                                <div class="episode-container__meta">
+                                    <h2 class="episode-container__title">{{ title }}</h2>
+                                    <h5 class="episode-container__subtitle">{{ published_at format="M d, Y"}}</h5>
+                                    <p class="episode-container__content">{{ description }}</p>
+                                    <div class="episode-container__player">
+                                        <iframe frameborder='0' height='200px' scrolling='no' seamless src='https://player.simplecast.com/{{ id }}?dark=false' width='100%'></iframe>
+                                    </div>
+                                </div>
+                                <div class="episode-container__image" style="background-image: url('{{ images.small }}');">
+                                    <img src="{{ images.small }}" />
                                 </div>
                             </div>
-                            <div class="episode-container__image" style="background-image: url('{{ images.small }}');">
-                                <img src="{{ images.small }}" />
-                            </div>
-                        </div>
+                        {{ endif }}
                     {{ /response.collection }}
                 </div>
             </div>
@@ -62,19 +64,21 @@
                     </div>
                 </div>
                 <div class="row row--adapt-overcome">
-                    {{ response.collection limit="16" }}
-                        <div class="col-xs-6 col-sm-4 col-md-3">
-                            <div class="card">
-                                {{ if image_url | segment:2 != "92b528" }}
-                                    <img class="card-img-top" src="https://cdn.simplecast.com/{{ image_url | segment:1 }}/{{ image_url | segment:2 }}/{{ image_url | segment:3 }}/300x300/{{ image_url | segment:4 }}" alt="{{ title }}">
-                                {{ else }}
-                                    <img class="card-img-top" src="https://cdn.simplecast.com/{{ image_url | segment:1 }}/{{ image_url | segment:2 }}/{{ image_url | segment:3 }}/{{ image_url | segment:4 }}/300x300/{{ image_url | segment:5 }}" alt="{{ title }}">
-                                {{ endif }}
-                                <div class="card-body">
-                                    <a href="https://master-of-one-network.simplecast.com/episodes/{{ slug }}-{{ token }}" target="_blank" class="btn btn-primary card-body__btn">Play Episode</a>
+                    {{ response.collection limit="18" }}
+                        {{ if !is_hidden }}
+                            <div class="col-xs-6 col-sm-4 col-md-3">
+                                <div class="card">
+                                    {{ if image_url | segment:2 != "92b528" }}
+                                        <img class="card-img-top" src="https://cdn.simplecast.com/{{ image_url | segment:1 }}/{{ image_url | segment:2 }}/{{ image_url | segment:3 }}/300x300/{{ image_url | segment:4 }}" alt="{{ title }}">
+                                    {{ else }}
+                                        <img class="card-img-top" src="https://cdn.simplecast.com/{{ image_url | segment:1 }}/{{ image_url | segment:2 }}/{{ image_url | segment:3 }}/{{ image_url | segment:4 }}/300x300/{{ image_url | segment:5 }}" alt="{{ title }}">
+                                    {{ endif }}
+                                    <div class="card-body">
+                                        <a href="https://master-of-one-network.simplecast.com/episodes/{{ slug }}-{{ token }}" target="_blank" class="btn btn-primary card-body__btn">Play Episode</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        {{ endif }}
                     {{ /response.collection }}
                 </div>
                 <div class="row">
@@ -83,19 +87,21 @@
                     </div>
                 </div>
                 <div class="row row--adapt-overcome the-rest-of-the-owl">
-                    {{ response.collection offset="16" }}
-                        <div class="col-xs-6 col-sm-4 col-md-3">
-                            <div class="card">
-                                {{ if image_url | segment:2 != "92b528" }}
-                                    <img class="card-img-top" src="https://cdn.simplecast.com/{{ image_url | segment:1 }}/{{ image_url | segment:2 }}/{{ image_url | segment:3 }}/300x300/{{ image_url | segment:4 }}" alt="{{ title }}">
-                                {{ else }}
-                                    <img class="card-img-top" src="https://cdn.simplecast.com/{{ image_url | segment:1 }}/{{ image_url | segment:2 }}/{{ image_url | segment:3 }}/{{ image_url | segment:4 }}/300x300/{{ image_url | segment:5 }}" alt="{{ title }}">
-                                {{ endif }}
-                                <div class="card-body">
-                                    <a href="https://master-of-one-network.simplecast.com/episodes/{{ slug }}-{{ token }}" target="_blank" class="btn btn-primary card-body__btn">Play Episode</a>
+                    {{ response.collection offset="18" }}
+                        {{ if !is_hidden }}
+                            <div class="col-xs-6 col-sm-4 col-md-3">
+                                <div class="card">
+                                    {{ if image_url | segment:2 != "92b528" }}
+                                        <img class="card-img-top" src="https://cdn.simplecast.com/{{ image_url | segment:1 }}/{{ image_url | segment:2 }}/{{ image_url | segment:3 }}/300x300/{{ image_url | segment:4 }}" alt="{{ title }}">
+                                    {{ else }}
+                                        <img class="card-img-top" src="https://cdn.simplecast.com/{{ image_url | segment:1 }}/{{ image_url | segment:2 }}/{{ image_url | segment:3 }}/{{ image_url | segment:4 }}/300x300/{{ image_url | segment:5 }}" alt="{{ title }}">
+                                    {{ endif }}
+                                    <div class="card-body">
+                                        <a href="https://master-of-one-network.simplecast.com/episodes/{{ slug }}-{{ token }}" target="_blank" class="btn btn-primary card-body__btn">Play Episode</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        {{ endif }}
                     {{ /response.collection }}
                 </div>
             </div>
