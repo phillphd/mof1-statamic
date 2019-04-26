@@ -64,6 +64,7 @@
                 </div>
                 <div class="row row--adapt-overcome">
                     {{ response.collection offset="1" limit="16" }}
+                        {{ if !is_hidden }}
                         <div class="col-xs-6 col-sm-4 col-md-3">
                             <div class="card">
                                 {{ if image_url | segment:2 != "92b528" }}
@@ -76,6 +77,7 @@
                                 </div>
                             </div>
                         </div>
+                        {{ endif }}
                     {{ /response.collection }}
                 </div>
                 <div class="row">
