@@ -4,5 +4,6 @@ locales:
   en:
     full: en_US
     name: English
-    url: 'https://www.mof1.network/'
+    # url: 'https://www.mof1.network/'
+    url: 'https://master:8890/'
 timezone: America/New_York

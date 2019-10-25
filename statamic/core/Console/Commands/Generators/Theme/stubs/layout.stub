@@ -8,12 +8,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Welcome to the Master Of One Network, where every week our shows highlight the creatives behind the latest in great design across all platforms.">
-    <meta property="og:title" content="Master of One Network">
-    <meta property="og:description" content="Welcome to the Master Of One Network, where every week our shows highlight the creatives behind the latest in great design across all platforms.">
-    <meta property="og:image" content="https://media.simplecast.com/podcast/image/1607/1547442946-artwork.jpg">
-    <meta property="og:url" content="https://www.mof1.network/">
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="description" content="Another awesome Statamic site">
     <title>{{ title or site_title }}</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ theme:css }}">

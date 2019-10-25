@@ -724,6 +724,222 @@ img.zoom-img {
   cursor: default;
 }
 
+.single-content {
+  padding: 80px 0 0;
+}
+
+.single-content__primary {
+  position: relative;
+}
+
+.single-content__primary p:first-child::first-letter {
+  float: left;
+  padding: 10px 12px 0 0;
+  font-size: 5.25rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  color: #FEC531;
+}
+
+.single-content__primary a {
+  padding: 0 4px;
+  margin: 0 4px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+  background-color: #FEC531;
+  transition: .2s;
+}
+
+.single-content__primary a:hover {
+  text-decoration: none;
+}
+
+.single-content__terms {
+  padding: 0;
+  margin: 20px 0 0;
+  list-style-type: none;
+}
+
+.single-content__terms li {
+  display: inline-block;
+  padding: 4px 8px;
+  margin: 0 8px 8px 0;
+  font-family: 'bebas_kairegular';
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #000;
+  transition: .2s;
+}
+
+.single-content__terms li:hover {
+  opacity: .8;
+}
+
+.single-content__terms a {
+  color: #FEC531;
+}
+
+.single-content__terms a:hover {
+  text-decoration: none;
+}
+
+.single-content__social {
+  margin: 0 0 30px;
+  text-align: center;
+  margin: 20px 0 0;
+  text-align: left;
+}
+
+.single-content__social .social-list__item {
+  margin: 0 10px;
+  color: #000;
+  margin: 0 10px 0 0;
+}
+
+.single-content__social a {
+  color: #000;
+}
+
+.single-content__social a:hover {
+  color: #FEC531;
+}
+
+.single-content__backlink {
+  margin: 100px 0 80px;
+}
+
+.single-content img {
+  width: 100%;
+  height: auto;
+  margin: 20px 0 40px;
+  background-color: #F3F3F3;
+}
+
+.attribution-block {
+  display: none;
+  max-width: 175px;
+  font-size: 1rem;
+  background-color: #000;
+  display: block;
+}
+
+.attribution-block__author {
+  padding: 0 20px;
+  margin: 8px 0;
+  font-family: 'bebas_kairegular';
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.attribution-block__bio {
+  padding: 0 20px 20px;
+  font-style: italic;
+  color: #EFEFEF;
+}
+
+.attribution-block__image {
+  width: 100%;
+  height: 100px;
+  margin: 0 auto 20px;
+  background-color: #EFEFEF;
+  background-position: center;
+  background-size: cover;
+}
+
+.attribution-block a {
+  color: #FEC531;
+  opacity: 1;
+  transition: .2s;
+}
+
+.attribution-block a:hover {
+  text-decoration: none;
+  opacity: .8;
+}
+
+.rating-block {
+  position: relative;
+  min-height: 140px;
+  padding: 30px 40px;
+  margin-bottom: 40px;
+  background-color: #000;
+}
+
+.rating-block__title {
+  margin-bottom: 16px;
+  font-family: 'bebas_kairegular';
+  font-size: 14px;
+  font-weight: 700;
+  color: #FEC531;
+  text-transform: uppercase;
+}
+
+.rating-block__text {
+  margin-bottom: 0;
+  color: #FFF;
+  padding-right: 160px;
+}
+
+.rating-block__container {
+  position: relative;
+  width: 120px;
+  height: 100px;
+  margin: 40px auto 0;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin: 0 40px;
+  transform: translateY(-50%);
+}
+
+.rating-block__rating {
+  position: absolute;
+  top: 0;
+  right: calc(50% + 10px);
+  color: #FEC531;
+  content: "";
+}
+
+.rating-block__divider {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 80px;
+  background-color: #FFF;
+  content: "";
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.rating-block__max {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% + 10px);
+  color: #FFF;
+  content: "";
+}
+
+.rating-block__rating,
+.rating-block__max {
+  font-family: "futura-pt", sans-serif;
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -4px;
+  text-transform: none;
+}
+
+.instagram-media {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-bottom: 40px !important;
+}
+
 @font-face {
   font-family: 'bebas_kairegular';
   src: url("../fonts/webfontkit/bebaskai-webfont.woff2") format("woff2"), url("../fonts/webfontkit/bebaskai-webfont.woff") format("woff");
@@ -762,6 +978,13 @@ body {
   body {
     padding: 0;
   }
+}
+
+.section-post p {
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 1.67;
+  font-style: normal;
 }
 
 .info-podcast-title i {
@@ -971,4 +1194,12 @@ body {
 .boom-jangles .the-rest-of-the-owl {
   height: auto;
   opacity: 1;
+}
+
+img {
+  height: auto;
+}
+
+img.size-full {
+  width: 100%;
 }

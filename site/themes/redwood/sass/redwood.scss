@@ -13,6 +13,8 @@
 @import "components/tiles";
 @import "components/zoom";
 
+@import "elements/post";
+
 @font-face {
     font-family: 'bebas_kairegular';
     src: url('../fonts/webfontkit/bebaskai-webfont.woff2') format('woff2'),
@@ -51,6 +53,15 @@ body {
 	background-image: url('../../../../assets/img/texture.jpg');
 	@media (min-width: 768px) {
 		padding: 0;
+	}
+}
+
+.section-post {
+	p {
+		margin-bottom: 30px;
+    	font-size: 16px;
+    	line-height: 1.67;
+    	font-style: normal;
 	}
 }
 
@@ -237,5 +248,12 @@ body {
 	.boom-jangles & {
 		height: auto;
 		opacity: 1;
+	}
+}
+
+img {
+	height: auto;
+	&.size-full {
+		width: 100%;
 	}
 }

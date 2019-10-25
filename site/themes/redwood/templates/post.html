@@ -1,0 +1,42 @@
+<div class="container">
+	<section>
+    	<h1>{{ title }}</h1>
+    </section>
+    <section>
+    	<div class="row">
+			<div class="col-xs-12 col-md-3 col-lg-2">
+				<div class="attribution-block">
+					<div class="attribution-block__image" style="background-image: url('https://timededition.com/wp-content/uploads/2018/06/Patrick-e1530077804534.jpg');"></div>
+					<div class="attribution-block__author">
+						<a href="https://timededition.com/author/phillphd/">Patrick Hill</a>
+					</div>
+					<div class="attribution-block__bio">Making friends and sharing stories.</div>
+				</div>
+				<ul class="single-content__social social-list">
+					<li class="social-list__item"><a href="#!" class="social-links--facebook" data-quote="Cam Film Review from Fantastic Fest"><i class="fab fa-facebook"></i></a></li>
+					<li class="social-list__item"><a href="#!" class="social-links--twitter" data-quote="Cam Film Review from Fantastic Fest"><i class="fab fa-twitter"></i></a></li>
+					<li class="social-list__item"><a href="#!" class="copy" data-clipboard-text="https://timededition.com/cam-film-review-from-fantastic-fest/"><i class="fas fa-link"></i></a></li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-md-9 col-lg-10">
+				<div class="rating-block">
+					<div class="rating-block__title">Our Rating</div>
+					<p class="rating-block__text">{{ movie_summary }}</p>
+					<div class="rating-block__container">
+						<div class="rating-block__rating">{{ movie_rating }}</div>
+						<div class="rating-block__divider"></div>
+						<div class="rating-block__max">10</div>
+					</div>
+				</div>
+				<div class="single-content__primary">
+					{{ content }}
+				</div>
+				<ul class="single-content__terms">
+					{{ foreach:tags }}
+						<li><a href="/tag/{{ value }}">{{ value }}</a></li>
+					{{ /foreach:tags }}
+				</ul>
+			</div>
+		</div>
+    </section>
+</div>

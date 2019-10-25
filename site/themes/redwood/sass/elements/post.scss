@@ -1,0 +1,198 @@
+.single-content {
+    padding: 80px 0 0;
+    &__primary {
+        position: relative;
+        p:first-child::first-letter {
+            float: left;
+            padding: 10px 12px 0 0;
+            font-size: 5.25rem;
+            font-weight: 700;
+            line-height: 3.25rem;
+            color: $yellow;
+        }
+        a {
+            padding: 0 4px;
+            margin: 0 4px;
+            font-size: 14px;
+            font-weight: 700;
+            color: $black;
+            text-transform: uppercase;
+            background-color: $yellow;
+            transition: .2s;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    &__terms {
+        padding: 0;
+        margin: 20px 0 0;
+        list-style-type: none;
+        li {
+            display: inline-block;
+            padding: 4px 8px;
+            margin: 0 8px 8px 0;
+            font-family: 'bebas_kairegular';
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            background-color: $black;
+            transition: .2s;
+            &:hover {
+                opacity: .8;
+            }
+        }
+        a {
+            color: $yellow;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    &__social {
+        margin: 0 0 30px;
+        text-align: center;
+        // @include media-breakpoint-up(md) {
+            margin: 20px 0 0;
+            text-align: left;
+        // }
+        .social-list__item {
+            margin: 0 10px;
+            color: $black;
+            // @include media-breakpoint-up(md) {
+                margin: 0 10px 0 0;
+            // }
+        }
+        a {
+            color: $black;
+            &:hover {
+                color: $yellow;
+            }
+        }
+    }
+    &__backlink {
+        margin: 100px 0 80px;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        margin: 20px 0 40px;
+        background-color: #F3F3F3;
+    }
+}
+
+.attribution-block {
+    display: none;
+    max-width: 175px;
+    font-size: 1rem;
+    background-color: $black;
+    // @include media-breakpoint-up(md) {
+        display: block;
+    // }
+    &__author {
+        padding: 0 20px;
+        margin: 8px 0;
+        font-family: 'bebas_kairegular';
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &__bio {
+        padding: 0 20px 20px;
+        font-style: italic;
+        color: $gray-light;
+    }
+    &__image {
+        width: 100%;
+        height: 100px;
+        margin: 0 auto 20px;
+        background-color: $gray-light;
+        background-position: center;
+        background-size: cover;
+    }
+    a {
+        color: $yellow;
+        opacity: 1;
+        transition: .2s;
+        &:hover {
+            text-decoration: none;
+            opacity: .8;
+        }
+    }
+}
+
+.rating-block {
+    position: relative;
+    min-height: 140px;
+    padding: 30px 40px;
+    margin-bottom: 40px;
+    background-color: $black;
+    &__title {
+        margin-bottom: 16px;
+        font-family: 'bebas_kairegular';
+        font-size: 14px;
+        font-weight: 700;
+        color: $yellow;
+        text-transform: uppercase;
+    }
+    &__text {
+        margin-bottom: 0;
+        color: $white;
+        // @include media-breakpoint-up(md) {
+            padding-right: 160px;
+        // }
+    }
+    &__container {
+        position: relative;
+        width: 120px;
+        height: 100px;
+        margin: 40px auto 0;
+        // @include media-breakpoint-up(md) {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            margin: 0 40px;
+            transform: translateY(-50%);
+        // }
+    }
+    &__rating {
+        position: absolute;
+        top: 0;
+        right: calc(50% + 10px);
+        color: $yellow;
+        content: "";
+    }
+    &__divider {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 4px;
+        height: 80px;
+        background-color: $white;
+        content: "";
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    &__max {
+        position: absolute;
+        bottom: 0;
+        left: calc(50% + 10px);
+        color: $white;
+        content: "";
+    }
+    &__rating,
+    &__max {
+        font-family: "futura-pt", sans-serif;
+        font-size: 2.5rem;
+        font-style: italic;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: -4px;
+        text-transform: none;
+    }
+}
+
+.instagram-media {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 40px !important;
+}
